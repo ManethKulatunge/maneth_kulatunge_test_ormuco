@@ -31,7 +31,7 @@ Test Cases:
   3.  Input: version1 = "7.2.2.2.4", version2 = "7.2.3"
       Output: "7.2.2.2.4 is less than 7.2.3"
 
-**Question C** (named as GDLRU)
+**Question C** (named as GDLRU.java)
 
   -The Cache is implemented with a Hashtable and a Doubly linkedlist to reduce timecomplexity taken up when     
    lookup occurs and the Doubly linked list allows easy travelling between the entries of the cache.
