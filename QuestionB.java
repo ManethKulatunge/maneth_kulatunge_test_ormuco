@@ -20,6 +20,7 @@ public class QuestionB {
 	}
 	
 	public static int comparison(String version1, String version2) {
+		//creating character arrays to compare characters
 		char[] v1Array = version1.toCharArray();
 		char[] v2Array = version2.toCharArray();
 		
@@ -32,6 +33,7 @@ public class QuestionB {
 		while (v1Counter < v1Array.length || v2Counter < v2Array.length) {
 			int v1Number = 0;
 			
+			//skip the '.' and '0' values and compare the sums of version 1 and version 2
 			while (v1Counter < v1Length && v1Array[v1Counter]!= '.' ) {
 				v1Number = 10 * v1Number + v1Array[v1Counter] - '0';
 				++v1Counter;
@@ -62,9 +64,10 @@ public class QuestionB {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String version1 = "1.1";
-		String version2 = "1.1";
-		System.out.print(compareVersions(version1, version2));
+		//example
+		//String version1 = "7.5.2.4";
+		//String version2 = "7.5.3";
+		//System.out.print(compareVersions(version1, version2));
 	}
 
 }
